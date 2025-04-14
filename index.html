@@ -13,7 +13,10 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
   <circle cx='50' cy='50' r='45' stroke='black' stroke-width='5' fill='white' /> <text x='50%' y='55%' font-size='35' text-anchor='middle' fill='black' font-family='Arial' dy='.3em'>CBC</text>
-</svg>">
+</svg>"/>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -74,11 +77,22 @@
             </ul>
           </li> -->
           <li><a href="#contact">Contact</a></li>
+          <li>     </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#getquote">Request a Quote</a>
+      <a class="btn-whatsapp"
+        href="index.html#getquote">Request a Quote</a>
+        <a href="https://wa.me/8825725583"
+            target="_blank"
+            class="btn btn-success  rounded-pill d-flex align-items-center  text-white"
+            style=" z-index: 999;">
+            <i class="bi bi-whatsapp fs-4"></i>
+            <span></span>
+          </a>
+
+  
 
     </div>
   </header>
@@ -1257,7 +1271,7 @@
     </section><!-- /Gallery Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section d-none">
+    <section id="contact" class="contact section d-none0">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -1265,7 +1279,7 @@
         <p><span>Need Help?</span> <span class="description-title">Contact Us</span></p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="20">
 
         <div class="mb-5">
           <iframe style="width: 100%; height: 400px;" frameborder="0" allowfullscreen="" src="https://www.google.com/maps/embed/v1/place?q=330+Saliyer+Street,+Thirukalimedu,+Kanchipuram&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
@@ -1316,7 +1330,7 @@
 
         </div>
 
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
+        <form action="forms/contact.php" method="post" class="php-email-form d-none" data-aos="fade-up" data-aos-delay="600">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -1358,13 +1372,14 @@
       </div><!-- End Section Title -->
       <div class="container" data-aos="fade-up" data-aos-delay="10">
 
-      <form action="submit_form.php" method="post" class="p-4 border rounded shadow-sm bg-light">
+      <form action="submit_form.php" method="post" class=" php-email-form p-4 border rounded shadow-sm bg-light">
         <h3 class="mb-4 text-center">Enquire About Our Products</h3>
       
         <div class="row mb-3">
           <div class="col-md-6">
             <label for="name" class="form-label">Full Name *</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+            
           </div>
           <div class="col-md-6">
             <label for="email" class="form-label">Email Address *</label>
@@ -1407,7 +1422,7 @@
       
         <div class="d-grid">
           <!-- <button type="submit" class="btn btn-sm ">Send Inquiry</button> -->
-          <button type="submit" class="btn btn-sm ">Send Inquiry</button>
+          <button type="submit" class="btn btn-sm btn">Send Inquiry</button>
         </div>
       </form>
     </div>

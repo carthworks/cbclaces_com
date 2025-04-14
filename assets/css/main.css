@@ -206,6 +206,7 @@ h6 {
   border: 3px solid var(--accent-color);
   border-top-color: var(--surface-color);
   animation: php-email-form-loading 1s linear infinite;
+  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
 }
 
 @keyframes php-email-form-loading {
@@ -273,6 +274,18 @@ h6 {
 .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+
+.header .btn-whatsapp,
+.header .btn-whatsapp:focus {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 26px;
+  margin: 0;
+  border-radius: 50px;
+  transition: 0.3s;
 }
 
 @media (max-width: 1200px) {
@@ -1667,7 +1680,7 @@ section,
 }
 .carousel-inner, .carousel-item, .carousel-item img {
   height: 420px;
-  object-fit: cover;
+  object-fit: cover;    border-radius: 0.2rem;
 }
 
 .carousel-caption {
@@ -1718,4 +1731,36 @@ section,
   padding: 8px 20px;
   border-radius: 8px;
   display: inline-block;
+}
+
+/* Responsive: Mobile adjustments */
+@media (max-width: 576px) {
+
+  .header .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; /* move logo slightly down */
+  }
+
+  .header .logo h1 {
+    font-size: 1.8rem; /* a bit smaller */
+    margin: 0;
+    font-weight: 700;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    white-space: nowrap; /* Keep text in a single line */
+  }
+
+  .header .logo span {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--accent-color);
+    margin-top: 2px;
+    white-space: nowrap; /* Force tagline to stay single line */
+    position: relative; /* remove fixed */
+    top: 0; /* no manual shifting needed */
+  }
+
 }
